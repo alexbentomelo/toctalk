@@ -207,7 +207,7 @@ class Channels extends React.Component {
         <Menu.Menu className="menu">
           <Menu.Item>
             <span>
-              <Icon name="exchange" /> Canais Internos
+              <Icon name="exchange" /> Entradas Facebook
             </span>{" "}
             ({channels.length}) <Icon name="add" onClick={this.openModal} />
           </Menu.Item>

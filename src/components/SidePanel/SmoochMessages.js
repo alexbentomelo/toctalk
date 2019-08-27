@@ -98,7 +98,7 @@ class SmoochMessages extends React.Component {
       <Menu.Menu className="menu">
         <Menu.Item>
           <span>
-            <Icon name="mail" /> Chats Externos / Atendimentos
+            <Icon name="mail" /> Entradas Whatsapp
           </span>{" "}
           ({users.length})
         </Menu.Item>
