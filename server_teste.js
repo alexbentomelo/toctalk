@@ -115,6 +115,6 @@ app.post("/facebook_msgs", function(req, res) {
   }*/
 });
 
-app.listen(80, () => {
-  console.log(`App listening on port 80/facebook_msgs`);
+app.listen(8000, () => {
+  console.log(`App listening on port 8000/facebook_msgs`);
 });
