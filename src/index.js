@@ -31,18 +31,19 @@ const store = createStore(rootReducer, composeWithDevTools());
 
 class Root extends React.Component {
   componentDidMount() {
-    this.callApi()
-    .then(res => {
-      console.log(res);
-      return res.json();
-    })
-    .catch(err => console.log(err));
+   
 
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         // console.log(user);
         this.props.setUser(user);
         this.props.history.push("/");
+        this.callApi()
+        .then(res => {
+          console.log(res);
+          return res.json();
+        })
+        .catch(err => console.log(err));
       } else {
         this.props.history.push("/login");
         this.props.clearUser();
