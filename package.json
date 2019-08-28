@@ -29,6 +29,7 @@
     "semantic-ui-css": "^2.3.3",
     "semantic-ui-react": "^0.82.1",
     "smooch": "^4.18.2",
+    "smooch-core": "^8.7.3",
     "uuid": "^3.3.2"
   },
   "scripts": {
