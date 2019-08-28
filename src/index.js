@@ -31,19 +31,20 @@ const store = createStore(rootReducer, composeWithDevTools());
 
 class Root extends React.Component {
   componentDidMount() {
-   
+    
+  
 
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         // console.log(user);
         this.props.setUser(user);
         this.props.history.push("/");
-        this.callApi()
-        .then(res => {
-          console.log(res);
-          return res.json();
-        })
-        .catch(err => console.log(err));
+        
+        fetch('/facebook_msgs')
+        .then(response => {
+          console.log(response);
+          return response.json();
+        });
       } else {
         this.props.history.push("/login");
         this.props.clearUser();
@@ -51,13 +52,6 @@ class Root extends React.Component {
     });
   }
 
-  callApi = async () => {
-    const response = await fetch('/facebook_msgs');
-    const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
-
-    return body;
-  };
 
   render() {
     return this.props.isLoading ? (

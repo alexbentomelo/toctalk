@@ -36,7 +36,7 @@ const smooch = new Smooch({
 const app = express();
 app.use(bodyParser.json());
 
-app.post("/facebook_msgs", function(req, res) {
+app.get("/facebook_msgs", function(req, res) {
   //console.log("Webhook PAYLOAD:\n", JSON.stringify(req.body, null, 4));
   //res.send({ express: JSON.stringify(req.body, null, 4) });
   var data = req.body.messages[0];
