@@ -33,7 +33,7 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run start\"",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "server": "node server_teste.js",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start\"",
