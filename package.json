@@ -39,5 +39,6 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start\"",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "proxy": "https://vast-escarpment-76314.herokuapp.com:8000/"
 }
