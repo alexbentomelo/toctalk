@@ -27,6 +27,8 @@ import { setUser, clearUser } from "./actions";
 
 const store = createStore(rootReducer, composeWithDevTools());
 
+
+
 class Root extends React.Component {
   componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
