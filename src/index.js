@@ -30,21 +30,15 @@ const store = createStore(rootReducer, composeWithDevTools());
 
 
 class Root extends React.Component {
-  componentDidMount() {
-    
   
+ fetch("https://vast-escarpment-76314.herokuapp.com:8000", {mode: cors})
 
+  componentDidMount() {
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         // console.log(user);
         this.props.setUser(user);
         this.props.history.push("/");
-        
-        fetch('/facebook_msgs')
-        .then(response => {
-          console.log(response);
-          return response.json();
-        });
       } else {
         this.props.history.push("/login");
         this.props.clearUser();

@@ -34,7 +34,10 @@ const smooch = new Smooch({
 });
 
 const app = express();
+app.use(cors);
 app.use(bodyParser.json());
+
+
 
 app.get("/facebook_msgs", function(req, res) {
   //console.log("Webhook PAYLOAD:\n", JSON.stringify(req.body, null, 4));
@@ -99,20 +102,6 @@ app.get("/facebook_msgs", function(req, res) {
     }
   });
 
-  /* if (req.body.trigger === "message:appUser") {
-    smooch.appUsers
-      .sendMessage(appUserId, {
-        type: "text",
-        text: snap.val().content,
-        role: "appMaker"
-      })
-      .then(response => {
-        res.end();
-      })
-      .catch(err => {
-        res.end();
-      });
-  }*/
 });
 
 app.listen(8000, () => {
