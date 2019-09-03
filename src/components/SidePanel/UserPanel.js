@@ -125,7 +125,7 @@ class UserPanel extends React.Component {
             {/* App Header */}
             <Header inverted floated="left" as="h3">
               {/*<Icon name="code" />*/}
-              <Header.Content>TT - Ominichannel</Header.Content>
+              <Header.Content>TT - Omnichannel</Header.Content>
             </Header>
 
             {/* User Dropdown  */}

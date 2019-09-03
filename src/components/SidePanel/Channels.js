@@ -207,7 +207,7 @@ class Channels extends React.Component {
         <Menu.Menu className="menu">
           <Menu.Item>
             <span>
-              <Icon name="exchange" /> Entradas Facebook
+              <Icon name="exchange" /> Canais Externos
             </span>{" "}
             ({channels.length}) <Icon name="add" onClick={this.openModal} />
           </Menu.Item>
@@ -216,13 +216,13 @@ class Channels extends React.Component {
 
         {/* Add Channel Modal */}
         <Modal basic open={modal} onClose={this.closeModal}>
-          <Modal.Header>Add a Channel</Modal.Header>
+          <Modal.Header>Adicionar um Canal</Modal.Header>
           <Modal.Content>
             <Form onSubmit={this.handleSubmit}>
               <Form.Field>
                 <Input
                   fluid
-                  label="Name of Channel"
+                  label="Nome do Canal"
                   name="channelName"
                   onChange={this.handleChange}
                 />
@@ -231,7 +231,7 @@ class Channels extends React.Component {
               <Form.Field>
                 <Input
                   fluid
-                  label="About the Channel"
+                  label="Sobre o Canal"
                   name="channelDetails"
                   onChange={this.handleChange}
                 />
