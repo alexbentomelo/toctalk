@@ -11,6 +11,7 @@ import {
   Icon
 } from "semantic-ui-react";
 import { Link } from "react-router-dom";
+import toctalk from '../../images/toctalk.png';
 
 class Register extends React.Component {
   state = {
