@@ -22,8 +22,8 @@ class SidePanel extends React.Component {
         style={{ background: primaryColor, fontSize: "1.2rem" }}
       >
         <UserPanel primaryColor={primaryColor} currentUser={currentUser} />
-        <Starred currentUser={currentUser} />
-        <SmoochMessages currentUser={currentUser} />
+       {/* <Starred currentUser={currentUser} />
+        <SmoochMessages currentUser={currentUser} />*/}
         <Channels currentUser={currentUser} />
         <DirectMessages currentUser={currentUser} />
         

@@ -244,7 +244,7 @@ class Channels extends React.Component {
               <Icon name="checkmark" /> Add
             </Button>
             <Button color="red" inverted onClick={this.closeModal}>
-              <Icon name="remove" /> Cancel
+              <Icon name="remove" /> Cancelar
             </Button>
           </Modal.Actions>
         </Modal>
