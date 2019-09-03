@@ -114,7 +114,7 @@ class Login extends React.Component {
             </Message>
           )}
          <Message>
-            Administrador? <Link to="/register">Clique Aqui</Link>
+          {/*Administrador? <Link to="/register">Clique Aqui</Link>*/}
           </Message>
         </Grid.Column>
       </Grid>

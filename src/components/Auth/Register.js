@@ -132,8 +132,11 @@ class Register extends React.Component {
       <Grid textAlign="center" verticalAlign="middle" className="app">
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header as="h1" icon color="orange" textAlign="center">
-            <Icon name="puzzle piece" color="orange" />
-            Register for DevChat
+          <img
+           style={{width:350, height:150}}
+           src={toctalk}
+           />
+            Registre-se no TocTalk
           </Header>
           <Form onSubmit={this.handleSubmit} size="large">
             <Segment stacked>
@@ -142,7 +145,7 @@ class Register extends React.Component {
                 name="username"
                 icon="user"
                 iconPosition="left"
-                placeholder="Username"
+                placeholder="Nome de Usuário"
                 onChange={this.handleChange}
                 value={username}
                 type="text"
@@ -153,7 +156,7 @@ class Register extends React.Component {
                 name="email"
                 icon="mail"
                 iconPosition="left"
-                placeholder="Email Address"
+                placeholder="Email"
                 onChange={this.handleChange}
                 value={email}
                 className={this.handleInputError(errors, "email")}
@@ -165,7 +168,7 @@ class Register extends React.Component {
                 name="password"
                 icon="lock"
                 iconPosition="left"
-                placeholder="Password"
+                placeholder="Senha"
                 onChange={this.handleChange}
                 value={password}
                 className={this.handleInputError(errors, "password")}
@@ -177,7 +180,7 @@ class Register extends React.Component {
                 name="passwordConfirmation"
                 icon="repeat"
                 iconPosition="left"
-                placeholder="Password Confirmation"
+                placeholder="Confirme a Senha"
                 onChange={this.handleChange}
                 value={passwordConfirmation}
                 className={this.handleInputError(errors, "password")}
@@ -191,7 +194,7 @@ class Register extends React.Component {
                 fluid
                 size="large"
               >
-                Submit
+                Enviar
               </Button>
             </Segment>
           </Form>
@@ -202,7 +205,7 @@ class Register extends React.Component {
             </Message>
           )}
           <Message>
-            Already a user? <Link to="/login">Login</Link>
+            Já tem uma conta? <Link to="/login">Entre</Link>
           </Message>
         </Grid.Column>
       </Grid>
