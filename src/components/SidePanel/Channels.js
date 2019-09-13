@@ -182,7 +182,7 @@ class Channels extends React.Component {
         key={channel.id}
         onClick={() => this.changeChannel(channel)}
         name={channel.name}
-        style={{ opacity: 0.7 }}
+        style={{ opacity: 0.7, color:'black' }}
         active={channel.id === this.state.activeChannel}
       >
         {this.getNotificationCount(channel) && (
@@ -205,9 +205,10 @@ class Channels extends React.Component {
     return (
       <React.Fragment>
         <Menu.Menu className="menu">
-          <Menu.Item>
+          <Menu.Item
+           style={{ opacity: 0.7, fontStyle: "italic".anchor, color:'black' }}>
             <span>
-              <Icon name="exchange" /> Canais Externos
+              <Icon name="exchange" color="black" /> Canais Externos
             </span>{" "}
             ({channels.length}) <Icon name="add" onClick={this.openModal} />
           </Menu.Item>

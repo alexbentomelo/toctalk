@@ -113,9 +113,9 @@ class Login extends React.Component {
               {this.displayErrors(errors)}
             </Message>
           )}
-         <Message>
+        {/* <Message>
           Registre-se? <Link to="/register">Clique Aqui</Link>
-          </Message>
+        </Message>*/}
         </Grid.Column>
       </Grid>
     );

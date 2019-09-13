@@ -17,6 +17,21 @@ body,
   overflow-y: scroll;
 }
 
+/* SidePannel.js */
+.sidepanel {
+  height: 40vh;
+  overflow-y: scroll;
+}
+.sidepanel_marcados {
+  height: 10vh;
+  overflow-y: scroll;
+}
+.sidepanel_diretos {
+  height: 10vh;
+  overflow-y: scroll;
+}
+
+
 /* MessageForm.js */
 .message__form {
   position: fixed !important;

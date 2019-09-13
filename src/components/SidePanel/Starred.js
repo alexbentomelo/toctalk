@@ -58,7 +58,7 @@ class Starred extends React.Component {
         key={channel.id}
         onClick={() => this.changeChannel(channel)}
         name={channel.name}
-        style={{ opacity: 0.7 }}
+        style={{ opacity: 0.7, color:'black' }}
         active={channel.id === this.state.activeChannel}
       >
         # {channel.name}
@@ -70,7 +70,8 @@ class Starred extends React.Component {
 
     return (
       <Menu.Menu className="menu">
-        <Menu.Item>
+        <Menu.Item
+         style={{ opacity: 0.7, fontStyle: "italic".anchor, color:'black' }}>
           <span>
             <Icon name="star" /> Marcados
           </span>{" "}

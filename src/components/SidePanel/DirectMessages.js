@@ -96,18 +96,21 @@ class DirectMessages extends React.Component {
 
     return (
       <Menu.Menu className="menu">
-        <Menu.Item>
+        <Menu.Item
+         style={{ opacity: 0.7, fontStyle: "italic".anchor, color:'black' }}>
           <span>
-            <Icon name="mail" /> Mensagens Diretas
+            <Icon name="mail"
+            color="black"/> Mensagens Diretas
           </span>{" "}
           ({users.length})
         </Menu.Item>
-        {users.map(user => (
+         {users.map(user => (
           <Menu.Item
             key={user.uid}
             active={user.uid === activeChannel}
             onClick={() => this.changeChannel(user)}
-            style={{ opacity: 0.7, fontStyle: "italic" }}
+            color="black"
+            style={{ opacity: 0.7, fontStyle: "italic".anchor, color:'black' }}
           >
             <Icon
               name="circle"

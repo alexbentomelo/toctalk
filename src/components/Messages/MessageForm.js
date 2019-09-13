@@ -240,7 +240,7 @@ class MessageForm extends React.Component {
               ? "error"
               : ""
           }
-          placeholder="Write your message"
+          placeholder="Insira sua mensagem..."
         />
         <Button.Group icon widths="2">
           <Button
