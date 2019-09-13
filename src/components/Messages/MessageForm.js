@@ -247,7 +247,7 @@ class MessageForm extends React.Component {
             onClick={this.sendMessage}
             disabled={loading}
             color="orange"
-            content="Add Reply"
+            content="Enviar Mensagem"
             labelPosition="left"
             icon="edit"
           />
@@ -255,7 +255,7 @@ class MessageForm extends React.Component {
             color="teal"
             disabled={uploadState === "uploading"}
             onClick={this.openModal}
-            content="Upload Media"
+            content="Enviar Arquivo"
             labelPosition="right"
             icon="cloud upload"
           />
